@@ -8,7 +8,27 @@ Smash sushi, dodge junk food, and compete for the highest score before time runs
 
 Items randomly spawn around the board while a shared timer counts down. Players click the sushi sprites to earn points and avoid the junk food that subtracts from their score. When the timer reaches zero, the game tallies the totals and announces the winner.
 
+[WALKTHROUGH.md](https://github.com/metaversecloud-com/sushi-smash-codex/blob/main/WALKTHROUGH.md) is a full breakdown of how the game works.
+
+## How To Use this Repo
+
 This repository holds the code specification for the **Sushi Smash** game built on Topia's experience engine.
+
+Download the .json file and go to https://topia.io/t/dashboard/experiences.  Upload the json to your Experiences list by clicking this button.
+
+![Upload Topia Experience JSON](https://github.com/metaversecloud-com/sushi-smash-codex/blob/main/Upload%20Topia%20Experiences.png "Upload Topia Experience json")
+
+If you don't have an Experiences side tab, please email beta@topia.io to request beta access to the new Topia Experiences Engine.
+
+Once you have uploaded the json to your Experiences tab, it should appear in the list.  Click *Edit Game* to modify remix the experience.
+
+To add your experience to a world where you have edit rights, go to the My Scenes tab and find your experience in the list.  Then simply drop the scene.  
+
+You may need to add configuration variables in the Config tab while editing the asset (for things like your interactive public key and pixel particle effects).  You can generate an interactive public key [here](https://topia.io/t/dashboard/integrations).  Make sure you only add the public key to your asset config.
+
+[MODDING_TUTORIAL.md](https://github.com/metaversecloud-com/sushi-smash-codex/blob/main/MODDING_TUTORIAL.md) contains some ideas for remixing this experience.
+
+## How It Works
 
 Topia's experience engine loads this JSON specification and translates it into runnable TypeScript during deployment. The engine runs entirely on Topia's multiplayer infrastructure and does not require a custom backend. Gameplay runs in canvas with built‑in WebRTC networking, collision, and physics features.
 
@@ -29,6 +49,8 @@ spriteManager.updateSprite({ _rs: _rs, _rsId: _rsId, as: false }, `${playerId}_s
 ```
 
 ## Game Engine Function Usage
+
+For a comprehensive explanation of each function, see [FUNCTION_REFERENCE.md](https://github.com/metaversecloud-com/sushi-smash-codex/blob/main/FUNCTION_REFERENCE.md)
 
 The functions below are specific to Topia's game engine. Each entry explains how to invoke the function and what role it plays during gameplay.
 
