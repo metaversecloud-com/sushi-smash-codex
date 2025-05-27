@@ -1,5 +1,13 @@
 # Sushi Smash Codebase
 
+## Objective
+
+Smash sushi, dodge junk food, and compete for the highest score before time runs out.
+
+## Gameplay Overview
+
+Items randomly spawn around the board while a shared timer counts down. Players click the sushi sprites to earn points and avoid the junk food that subtracts from their score. When the timer reaches zero, the game tallies the totals and announces the winner.
+
 This repository holds the code specification for the **Sushi Smash** game built on Topia's experience engine.
 
 Topia's experience engine loads this JSON specification and translates it into runnable TypeScript during deployment. The engine runs entirely on Topia's multiplayer infrastructure and does not require a custom backend. Gameplay runs in canvas with built‑in WebRTC networking, collision, and physics features.
